@@ -19,7 +19,7 @@ async def on_media_handler(c: Client, m: "types.Message"):
     await asyncio.sleep(3)
     await c.send_flooded_message(
         chat_id=m.chat.id,
-        text="**Should I show File Information?**",
+        text="**Should I show File Information @animecolony?**",
         reply_markup=types.InlineKeyboardMarkup(
             [[types.InlineKeyboardButton("Yes", callback_data="showFileInfo"),
               types.InlineKeyboardButton("No", callback_data="closeMessage")]]
